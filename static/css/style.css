@@ -1,0 +1,239 @@
+
+/* ------------------- Navbar -----------------*/
+.navbar{
+    background-color: black;
+}
+
+.logonavbar{
+    justify-content: center;
+}
+
+.nav-link{
+    color:#C6AE34;
+    font-size: 2rem;
+    font-family: 'Unkempt', cursive;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+}
+
+.nav-link:hover{
+    color: #F79767;
+}
+
+.navspaceright{
+    margin-left: 20px;
+}
+
+.navspaceleft{
+    margin-right: 20px;
+}
+
+.ebhlogo{
+    width: 250px;
+    height: auto;
+}
+
+.hop{
+    width: 80px;
+    height: auto;
+    padding-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* -------------- Consent Cookie --------------*/
+
+#consent-popup{
+    visibility: visible;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 1rem;
+    color: white;
+    background-color: #000;
+    transition: opacity 1s ease;
+}
+
+#consent-text{
+    font-size: 1.0rem!important;
+}
+
+#accept{
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+    height: 0px;
+    width: 0px;
+}
+
+/* ------------------- Footer -----------------*/
+
+footer{
+    background-color: black;
+    padding-top: 3px;
+    text-align: center;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-icon{
+    color:#C6AE34;
+    font-size: 1.5rem;
+}
+
+.footer-icon:hover{
+    color:#F79767;
+}
+
+.copyright-footer{
+    color:#F79767;
+    font-size: 1.1rem;
+    font-family: 'Unkempt', cursive;
+}
+
+.footer-tc{
+    cursor: pointer;
+}
+
+/* ------------------- Media Queries base.html -----------------*/
+
+@media only screen and (max-width: 1024px){
+
+    .nav-link{
+        font-size: 1.7rem;
+    }
+    .ebhlogo{
+        width: 270px;
+        height: auto;
+        padding-top: 10px;
+    }
+    .hop{
+        width: 70px;
+        height: auto;
+        padding-top: 15px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+    
+
+@media only screen and (min-width: 768px){
+
+}
+@media only screen and (min-width: 991px){
+    #mobilelogo{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .hop{
+        display: none;
+    }
+    .ebhlogo{
+        display: none;
+    }
+    .navspaceright{
+        margin-left: 0px;
+    }
+    #mobilelogo{
+        display: block;
+    }
+    .ebhlogomodile{
+        width: 250px!important;
+        height: auto!important;
+    }
+    button:focus{
+        outline: none;
+    }
+    #navtogglericon{
+        color: white;
+        font-size: 2rem;
+        margin-top: 8px;
+    }
+    .nav-link{
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .hop{
+        display: none;
+    }
+    .ebhlogo{
+        display: none;
+    }
+    .navspaceright{
+        margin-left: 0px;
+    }
+    #mobilelogo{
+        display: block;
+    }
+    .ebhlogomodile{
+        width: 250px!important;
+        height: auto!important;
+    }
+    button:focus{
+        outline: none;
+    }
+    #navtogglericon{
+        color: white;
+        font-size: 2rem;
+        margin-top: 8px;
+    }
+    .nav-link{
+        font-size: 1.8rem;
+    }
+}     
+
+@media only screen and (max-width: 425px){
+
+    .underconstruction{
+        width: 80%;
+    }
+    .ebhlogomodile{
+        width: 240px!important;
+        height: auto!important;
+    }
+    #navtogglericon{
+        color: white;
+        font-size: 1.9rem;
+        margin-top: 10px;
+    }
+    .nav-link{
+        font-size: 1.5rem;
+    }
+    .footer-tc{
+        font-size: 1rem;
+    }
+}    
+   
+@media only screen and (max-width: 375px){
+
+}    
+
+@media only screen and (max-width: 320px){
+
+    .ebhlogomodile{
+        width: 200px!important;
+        height: auto!important;
+    }
+    .nav-link{
+        font-size: 1.5rem;
+    }
+    #navtogglericon{
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+}    

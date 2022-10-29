@@ -1,0 +1,151 @@
+
+footer{
+    position: absolute;
+}
+
+.background_image_mailinglist{
+    background-image: url('../media/friends.jpg');                      
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.formheading{
+    text-align: center;
+    font-family: 'Unkempt', cursive;
+    color:#C6AE34;
+    font-size: 2.5rem;
+}
+
+.signupbutton{
+    color:#C6AE34!important;
+}
+
+.signupbutton:hover{
+    text-decoration: none!important;
+    color:#F79767!important;
+}
+
+#subscribeButton{
+    text-align: center;
+}
+
+a{
+    color: #F79767;
+}
+
+a:hover{
+    color:#C6AE34;
+}
+
+.maillistbox{
+    color: #fff;
+    background-color: rgba(60,60,60,0.8);
+    max-width: 80%;
+    height: auto; 
+    padding: 30px; 
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.form-control{
+    margin: 4px 4px;
+}
+
+.responsefromapi{
+    font-size: 1.3rem;
+    text-align: center!important;
+    margin-top: 10px;
+}
+
+.redirectMessageDiv{
+    text-align: center;
+}
+
+#mc-embedded-subscribe{
+    text-align: center;
+    margin: 0;
+}
+
+.responsediv{
+    text-align: center!important;
+}
+
+.formCol{
+   margin: auto;
+   width: 80%;
+}
+
+.buttonsclick{
+    border: 1px solid white;
+    margin: 5px;
+}
+
+.buttonsclick:hover{
+    border: 1px solid white;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none!important;
+}
+
+.accepttick{
+    padding-left: 5px;
+}
+
+.footer-tc{
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* ------------------- Media Queries base.html -----------------*/
+
+@media only screen and (min-width: 2560px){
+ 
+}
+
+@media only screen and (max-width: 2556px){
+
+}
+
+@media only screen and (max-width: 1440px){
+
+}
+
+@media only screen and (max-width: 1024px){
+
+}
+
+@media only screen and (max-width: 768px){
+    .formheading{
+        font-size: 1.9rem;
+    }
+    .terms{
+        font-size: 0.8rem;
+    }
+}  
+
+@media only screen and (max-width: 425px){
+    .formheading{
+        font-size: 1.7rem;
+    }
+    .maillistbox{
+        max-width: 90%;
+        padding: 10px 10px;
+    }
+}    
+   
+@media only screen and (max-width: 375px){
+  
+}    
+
+@media only screen and (max-width: 320px){
+}

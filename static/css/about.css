@@ -1,0 +1,142 @@
+body{ 
+    font-family: 'Roboto', sans-serif;
+}
+
+.background_about_page{
+    background-image: url('../media/oldcrew.jpg');                      
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.aboutbox{
+    color: #fff;
+    background-color: rgba(60,60,60,0.9);
+    width: 90%;
+    height: auto; 
+    padding: 30px; 
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.linksButtons{
+    color: #F79767;;
+}
+
+.friendsimage{
+    width: 80%;
+    height: auto;
+    border-radius: 20%;
+    border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+}
+
+.friendimagerow{
+    text-align: center;
+}
+
+.oldcrewheading{
+    text-align: center;
+    font-family: 'Unkempt', cursive;
+    color:#C6AE34;
+}
+
+.oldcrewstory{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.subheadingpromisediv{
+    font-family: 'Unkempt', cursive;
+    color:#C6AE34;
+}
+
+.abouthebrew{
+    font-size: 1.3rem;
+}
+
+.brewrecipe{
+    font-size: 1.3rem;
+}
+
+.promisediv{
+    text-align: center;
+}
+
+.pumpclipimage{
+    width: 70%;
+    height: auto;
+}
+
+/* ------------------- Help Section  -----------------*/
+
+.helpalcohelpheading{
+    padding-top: 10px;
+    margin-bottom: 1px;
+    background-color: gray;
+    text-align: center;
+}
+
+.help-link{
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.help-link a{
+    color: white;
+}
+
+.help-link a:hover{
+    color: yellow;
+}
+
+.help-row{
+    background-color: gray;
+    border: 2px dotted yellow
+}
+
+/* ------------------- Media Queries -----------------*/
+
+
+@media only screen and (max-width: 768px){
+  
+}    
+    
+@media only screen and (max-width: 425px){
+    
+    .pumpclipimage{
+        width: 100%;
+    }
+    .oldcrewheading{
+        font-size: 2rem;
+    }
+  
+}    
+    
+@media only screen and (max-width: 375px){
+  
+    .pumpclipimage{
+        width: 100%;
+    }
+    
+}    
+    
+@media only screen and (max-width: 320px){
+   .aboutbox{
+       padding: 20px;
+   }
+   .oldcrewheading{
+       font-size: 1.8rem;
+   }
+   .helpheading{
+    font-size: 1.2rem;
+}
+}    

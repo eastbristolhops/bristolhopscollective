@@ -1,0 +1,307 @@
+
+body{ 
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.buttonsclick{
+    border: 1px solid white;
+    margin: 3px;
+}
+
+.buttonsclick:hover{
+    border: 1px solid white;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none!important;
+}
+
+.hideScrollToTop{
+    display: none;
+}
+
+.wikicontainer{
+    margin-bottom: 50px;
+}
+
+.horizontalrule{
+    color: blanchedalmond;
+}
+
+.card{
+    height: 100px;
+}
+
+.bttButton:hover{
+    border: 1px solid white;
+}
+
+.wikiheading{
+    font-family: 'Unkempt', cursive;
+    text-align: center;
+    color:#C6AE34;
+}
+
+.wikisub-heading{
+    font-size: 1.2rem;
+}
+
+.paragarphheading{
+    font-family: 'Unkempt', cursive;
+    text-align: center;
+    color:#C6AE34;
+}
+
+.paragarphsubheading{
+    font-family: 'Unkempt', cursive;
+    color: #F79767;
+}
+
+.wikibox{
+    color: #fff;
+    background-color: rgba(60,60,60,0.8);
+    width: 60%;
+    height: auto; 
+    padding: 30px; 
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.background_image_wiki{
+    background-image: url('../media/hopsback.jpg');                      
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ----------------------- wiki videos ------------------------*/
+.showvidbutton{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.vidbut{
+    margin-bottom: 20px;
+}
+
+.soilphvideo{
+    text-align: center;
+}
+
+.soilphvideoplayer{
+    width:250px;
+    height:215px;
+}
+
+.videoheading{
+    font-size: 1.5rem;
+    font-family: 'Unkempt', cursive;
+    color: #F79767;
+}
+/* allows for the js slide up slide down transition */
+.videos{ 
+    transition:height 1s ease-out;
+    height:0;
+    overflow:hidden;
+}
+
+/* ----------------------- Pest Section -----------------------*/
+
+#pestbuttons{
+    text-align: center;
+}
+
+.pestheading{
+    font-family: 'Unkempt', cursive;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pestimage{
+    width: 60%;
+    height: auto;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.pestimagediv{
+    text-align: center;
+}
+
+.pestclosebut{
+    text-align: center;
+}
+
+.pestclosebuttondiv{
+    text-align: center;
+}
+
+/* ----------------------- wiki images ------------------------*/
+
+.rhzimage{
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trellisimg{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trenchimg{
+    text-align: center;
+}
+
+.stepstext{
+    margin: auto;
+}
+
+
+/* ----------------------- wiki Disclaimer ---------------------*/
+
+.disclaimer{
+    font-size: 1rem;
+}
+
+/* ------------------- Media Queries base.html -----------------*/
+
+@media only screen and (min-width: 2560px){
+
+    .scrollToTop{
+        right:300px;
+    }
+}
+
+@media only screen and (max-width: 2556px){
+
+    .scrollToTop{
+        right:100px;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+
+    .scrollToTop{
+        right:60px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+    .scrollToTop{
+        right:20px;
+    }
+    .trenchimg{
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    .scrollToTop{
+        right:10px;
+    }
+    .pestimage{
+        width: 80%;
+    }   
+}  
+
+@media only screen and (max-width: 425px){
+    .wikibox{
+        width: 90%;
+        padding: 10px;
+    }
+    .wikiheading{
+        font-size: 2rem;
+    }
+    .wikisub-heading{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .paragarphheading{
+        font-size: 2rem;
+    }
+    p{
+        text-align: center;
+    }
+    .paragarphsubheading{
+        text-align: center;
+    }
+    .pestimage{
+        width: 90%;
+    }
+}    
+   
+
+@media only screen and (max-width: 375px){
+    
+    .wikiheading{
+        font-size: 1.9rem;
+    }
+    .wikisub-heading{
+        font-size: 1.4rem;
+    }
+    .paragarphheading{
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+}    
+
+
+@media only screen and (max-width: 320px){
+
+    .soilphvideoplayer{
+        width:220px;
+        height:215px;
+    }
+    .wikiheading{
+        font-size: 1.7rem;
+    }
+    .wikisub-heading{
+        font-size: 1.2rem;
+    }
+    .paragarphheading{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .paragarphsubheading{
+        font-size: 1.5rem;
+    }
+    .scrollToTop{
+        top:450px;
+    }
+    .videoheading{
+        font-size: 1.3rem;
+    }
+    .trellisimg{
+        width: 60%;
+        margin-bottom: 5px;
+    }
+    .underimage{
+        padding-top: 0px;
+    }
+
+}

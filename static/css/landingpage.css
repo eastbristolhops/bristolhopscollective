@@ -1,0 +1,188 @@
+body{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.landingcontainer{
+    position: relative;
+    min-height: 100vh;
+}
+
+.linksButtons{
+    color:#F79767;
+    text-decoration: underline;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.welcomeheading{
+    margin-top: 10px;
+    font-family: 'Unkempt', cursive;
+}
+
+.landingsubheading{
+    font-size: 1.6rem;
+}
+
+.landingheader{
+    text-align: center;
+}
+
+.landingsubparagraph{
+    font-family: 'Unkempt', cursive;
+    font-size: 2.2rem; 
+    padding-top: 20px;
+}
+
+p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.inline{
+    color: black;
+    text-decoration: none;
+}
+
+.wikilinkinline:hover{
+    color: gray;
+}
+
+.ebhlandingimage{
+    width: 40%;
+    height: auto;
+}
+
+.divspacer{
+    height: 60px;
+}
+
+.scrollToTop{
+    background-color: rgba(0, 0, 0, 0.19);
+}
+
+.landingimages{
+    width: 80%;
+    height: auto;
+    border-radius: 10%;
+    border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+}
+
+.landingimagerow{
+    text-align: center;
+}
+
+/* ---------------- dates for diary -----------------*/
+
+.dates{
+    font-size: 1.4rem;
+}
+
+.dates_disclaimer{
+    padding-top:30px;
+    font-size: 1.2rem;
+}
+
+/* --------------------- modal ------------------------*/
+
+.modal-dialog{
+    max-width: 80%;
+    height: auto;
+} 
+
+.modal-ebh-image{
+    width: 20%;
+    height: auto;
+}
+
+.modalimagebox{
+    text-align: center; 
+}
+
+.close{
+    margin-right: 20px;
+}
+
+.modal_buttons{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+/* ------------------- Media Queries -----------------*/
+
+
+@media only screen and (max-width: 768px){
+    .announcevideoplayer{
+        width: 60%; 
+        height: 250px; 
+        overflow: auto;
+    }
+  
+}    
+    
+@media only screen and (max-width: 425px){
+    .welcomeheading{
+        font-size: 1.5rem;
+    }
+    .ebhlandingimage{
+        width: 100%;
+    }
+    .landingsubheading{
+        font-size: 1.1rem;
+    }
+    .landingsubparagraph{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    .createdby, #createdby{
+       font-size: 0.9rem;
+   }
+   .modal-dialog{
+       max-width: 100%;
+   }
+   .divspacer{
+    height: 90px;
+    }
+    .dates{
+    font-size: 1.1rem;
+    }
+    .dates_disclaimer{
+        font-size: 0.9rem;
+    }
+    .announcevideoplayer{
+        width: 80%; 
+    }   
+}    
+    
+@media only screen and (max-width: 375px){
+    .welcomeheading{
+        font-size: 1.5rem;
+    }
+    .ebhlandingimage{
+        width: 100%;
+    }
+    .landingsubheading{
+        font-size: 1.1rem;
+    }
+    .landingsubparagraph{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    .createdby, #createdby{
+       font-size: 0.9rem;
+   }
+   .announcevideoplayer{
+    width: 90%; 
+    }  
+}    
+    
+@media only screen and (max-width: 320px){
+   
+}    
