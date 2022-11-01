@@ -125,4 +125,13 @@ table{
     .stat_image_div{
         padding-left: 0px;
     }
+    .newsvideoplayer{
+        width:250px;
+        height:215px;
+        
+    }
+    .videodiv{
+        padding-left: 3px;
+    }
 }
+
