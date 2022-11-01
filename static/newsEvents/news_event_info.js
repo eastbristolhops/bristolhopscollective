@@ -7,7 +7,7 @@ let news =[
     For years Easton Promise has comprised of hops grown all over Bristol and we decided it was time our name was more representative of all our growers." 
 ]
 let events =[
-     'We now have a page dedicated page for news - ',
+     'We now have a page dedicated page for news ',
      'For updates about Bristol Hops Collective'
 ]
 let events_dates_times = [
