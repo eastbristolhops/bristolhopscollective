@@ -1,16 +1,16 @@
 "use strict";
 
 let news =[
-    "<b style='color: red'>*** BIG NEWS ***</b> We have changed our name, formerly East Bristol Hops, now <b>Bristol Hops Collective</b> we have \
-    essentially gone back to our roots of 2016 and are now using our original name, we feel we have outgrown East Bristol Hops as new member whould always\
-     ask if they could join but where unsure if it was possible as we \
-    where East Bristol Hops so now we feel we are more inclusing of the community we cover.",
+    "<b style='color: red'>*** BIG NEWS ***</b>  We have changed our name! Formerly known as East Bristol Hops, going forward, our network of patchwork \
+    farmers will be known as <b>Bristol Hops Collective</b>. This will better reflect the reach of our growers and make \
+    us more inclusive. We also hope this will clear up any confusion prospective new members may have over who may join us. \
+    For years Easton Promise has comprised of hops grown all over Bristol and we decided it was time our name was more representative of all our growers." 
 ]
 let events =[
-     '<b style="color: red">*** BIG NEWS ***</b> New Logo comming soon', 
-     'We now have a page dedicated page to news go check out out'
+     'We now have a page dedicated page for news - ',
+     'For updates about Bristol Hops Collective'
 ]
 let events_dates_times = [
-     'early 2023', 
-     '<a href="pages/news.html">Click Here</a>'
+     '<a href="pages/news.html">check out out.</a>',
+     '<a href="pages/subscribe.html">sign up to the mailing list.</a>'
 ]
