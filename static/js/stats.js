@@ -1,9 +1,9 @@
 "use strict";
 let media_folder = '../static/media/';
-let info = ['bd2022.png', 'bd2021.png', 'bd2020.png', 'bd2019.png', 'bd2018.png','nodatachart.png','nodatachart.png'];
-let pumpclip = ['EP_round2022.png', 'EP_round2022.png', 'EP_round2022.png',
+let info = ['nodatachart.png','bd2022.png', 'bd2021.png', 'bd2020.png', 'bd2019.png', 'bd2018.png','nodatachart.png','nodatachart.png'];
+let pumpclip = ['newbristol.png','EP_round2022.png', 'EP_round2022.png', 'EP_round2020.png',
                 'EP_round2022.png','EP_round2018.png', 'EP_round2017.png', 'EP_round2016.png'];
-let year = ['Hops Variety Breakdown 2022', 'Hops Variety Breakdown  2021','Hops Variety Breakdown  2020','Hops Variety Breakdown  2019',
+let year = ['Hops Variety Breakdown 2023','Hops Variety Breakdown 2022', 'Hops Variety Breakdown  2021','Hops Variety Breakdown  2020','Hops Variety Breakdown  2019',
             'Hops Variety Breakdown 2018', 'Hops Variety Breakdown 2017', 'Hops Variety Breakdown 2016']
 let beerinfo = document.getElementById('hops_makeup_and_pump_clips');
 

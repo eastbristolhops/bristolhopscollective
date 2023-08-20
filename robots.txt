@@ -1,4 +1,3 @@
 # Hello looks like you have found the root of the Hops Plant :)
 
-
 Sitemap: http://bristolhopscollective.co.uk/sitemap.xml
