@@ -74,6 +74,22 @@ p{
     text-align: center;
 }
 
+.carousel-item{
+    height: 28vw;
+}
+
+.carousel-inner{
+    width: 100vw;
+    margin-left: -20px;
+}
+
+.carouselimage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* ---------------- dates for diary -----------------*/
 
 .dates{
