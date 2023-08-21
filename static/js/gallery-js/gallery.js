@@ -17,7 +17,6 @@ function CleanImageArray(array_to_sort) {
 
   let tempArray = [[], [], [], []];
   let itemsPerArray = Math.ceil(sorted_links.length / tempArray.length);
-
   for (let line = 0; line < tempArray.length; line++) {
     // put an evan amount of links in each array
     for (let i = 0; i < itemsPerArray; i++) {

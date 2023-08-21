@@ -90,6 +90,14 @@ p{
     transform: translate(-50%, -50%);
 }
 
+.dropdown-menu{
+    background-color: black;
+}
+
+.navbar-dropdown-word{
+    text-decoration: none!important;
+}
+
 /* ---------------- dates for diary -----------------*/
 
 .dates{
@@ -178,7 +186,13 @@ p{
     }
     .announcevideoplayer{
         width: 80%; 
-    }   
+    }  
+    .carousel-item{
+        height: 50vw;
+    } 
+    .carousel-inner{
+        margin-left: -12px;
+    }
 }    
     
 @media only screen and (max-width: 375px){
@@ -203,6 +217,9 @@ p{
    .announcevideoplayer{
     width: 90%; 
     }  
+    .indexpumpimage{
+        margin-left: -7px;
+    }
 }    
     
 @media only screen and (max-width: 320px){
