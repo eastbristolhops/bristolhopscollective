@@ -14,7 +14,7 @@ function slideUp(slideup) {
 
 /* Thanks to https://stackoverflow.com/questions/6121203/
 how-to-do-fade-in-and-fade-out-with-javascript-and-css 
-for this infomation, these functions fade the paest section in and out*/
+for this infomation, these functions fade the pest section in and out*/
 
 //fade out
 function fade(element) {
