@@ -16,7 +16,7 @@ let aphids = `<div class="col-sm-12">
         causing leaves to go yellow and weak young plants may become stunted, they also excrete a liquid
         call (Honeydew) that can cause other problems such as sooty mould.<br> To get rid of aphids, there are a couple of methods,<br> 
         you can purchase aphid predators such as ladybugs and get them mail order, but this can be expensive, a
-        simple spray bottle with washing up liquid, or neem oil and water in should do it.<br> However, only as a last
+        simple spray bottle with washing up liquid and water in should do it.<br> However, only as a last
         resort if you are going
         to treat your hops please do so early in the season and not after mid-august as we don't want
         soapy beer,
