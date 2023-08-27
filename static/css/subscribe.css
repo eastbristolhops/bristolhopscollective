@@ -3,14 +3,6 @@ footer{
     position: absolute;
 }
 
-.dropdown-menu{
-    background-color: black;
-}
-
-.navbar-dropdown-word{
-    text-decoration: none!important;
-}
-
 .background_image_mailinglist{
     background-image: url('../media/friends.jpg');                      
     background-position: center;

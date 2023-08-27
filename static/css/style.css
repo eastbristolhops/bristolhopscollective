@@ -8,6 +8,14 @@
     justify-content: center;
 }
 
+.dropdown-menu{
+    background-color: black;
+}
+
+.navbar-dropdown-word{
+    text-decoration: none!important;
+}
+
 .nav-link{
     color:#C6AE34;
     font-size: 2rem;
@@ -18,10 +26,6 @@
 
 .nav-link:hover{
     color: #F79767;
-}
-
-.navspaceright{
-    margin-left: 20px;
 }
 
 .navspaceleft{
@@ -39,6 +43,10 @@
     padding-top: 15px;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 /* -------------- Consent Cookie --------------*/
@@ -104,8 +112,17 @@ footer{
     cursor: pointer;
 }
 
-/* ------------------- Media Queries base.html -----------------*/
+/* ------------------- Media Queries -----------------*/
 
+@media only screen and (min-width: 991px){
+    #mobilelogo{
+        display: none;
+    }
+    .dropdown-toggle::after{
+        content: none;
+    }
+}
+/* ------------------- Max widths -----------------*/
 @media only screen and (max-width: 1024px){
 
     .nav-link{
@@ -124,16 +141,6 @@ footer{
         padding-right: 8px;
     }
 }
-    
-
-@media only screen and (min-width: 768px){
-
-}
-@media only screen and (min-width: 991px){
-    #mobilelogo{
-        display: none;
-    }
-}
 
 @media only screen and (max-width: 991px){
     .hop{
@@ -141,9 +148,6 @@ footer{
     }
     .ebhlogo{
         display: none;
-    }
-    .navspaceright{
-        margin-left: 0px;
     }
     #mobilelogo{
         display: block;
@@ -172,9 +176,6 @@ footer{
     }
     .ebhlogo{
         display: none;
-    }
-    .navspaceright{
-        margin-left: 0px;
     }
     #mobilelogo{
         display: block;

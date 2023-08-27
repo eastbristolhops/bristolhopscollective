@@ -1,0 +1,76 @@
+
+/* -------------- Team Members --------------*/
+.hidden-in-desktop{
+    display: none;
+}
+
+.image-col{
+    padding-top: 10px;
+}
+
+.linkedin-icons{
+    font-size: 1.6rem;
+    padding: 10px;
+}
+
+.team-image{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-row{
+    text-align: center;
+    box-shadow: 5px 5px 10px 0px gray;
+    margin-top: 30px;
+}
+
+.team-member-name{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgba(0,0,0,.8);
+}
+
+.consultant-text{
+    font-size: 1.1rem;
+    padding: 25px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.consult-name-image{
+    padding-top: 50px!important;
+    padding-left: 50px!important;
+}
+
+.link-hover:hover{
+    text-decoration: none;
+    color: rgba(0,0,0,.2);
+}
+
+.meet_the_team{
+    font-size: 1.3rem;
+}
+
+.team-container{
+    padding-bottom: 20px;
+}
+
+li{
+    text-align: left;
+}
+
+.landingsubparagraph{
+    font-family: 'Unkempt', cursive;
+    font-size: 2.2rem; 
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* -------------- Media queries --------------*/
+
+@media only screen and (max-width: 420px){
+    .hidden-in-desktop{
+        display: block;
+    }
+}

@@ -7,14 +7,6 @@ p{
     font-size: 1.2rem;
 }
 
-.dropdown-menu{
-    background-color: black;
-}
-
-.navbar-dropdown-word{
-    text-decoration: none!important;
-}
-
 .buttonsclick{
     border: 1px solid white;
     margin: 3px;
