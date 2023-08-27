@@ -8,7 +8,9 @@ let aphids = `<div class="col-sm-12">
         <img class="pestimage"
             src="https://images.immediate.co.uk/production/volatile/sites/10/2018/02/4b618c4f-4b55-43db-976d-56c41331876e-837427f.jpg?quality=90&resize=768%2C574"
             alt="Image of Aphids">
-    </div>    
+            </div>   
+            <div style="text-align: center"> 
+            Image courtesy of <a href="https://www.gardenersworld.com/how-to/solve-problems/aphids/" target="_blank"><strong> Gardeners World</strong></a></div>
     <p>
         Aphids are a common garden pest but they can takeover hop plants, they are also key to quite a
         few hop plant disease, they chew into the stems and
@@ -39,6 +41,8 @@ let spider = `<div class="col-sm-12">
     <img class="pestimage"
         src="https://onspecialtycrops.files.wordpress.com/2015/08/leaf-bronzing.jpg?w=457&h=347"
         alt="image of Spider Mites">
+        <div style="text-align: center"> 
+            Image courtesy of <a href="https://onspecialtycrops.ca/2015/08/07/watch-out-for-twospotted-spider-mite-on-hops/" target="_blank"><strong> On Speciality Crops</strong></a></div>
 </div>    
 <p>
     Although a little less common than Aphids, The most common species of spider-mites that affect hops is the Two-Spotted Spider Mite. 
@@ -59,6 +63,8 @@ let sooty = ` <div class="col-sm-12">
     <img class="pestimage"
         src="https://extension.usu.edu/pests/ipm/images/ornamental-pest-guide/arthropods/aphid_sooty_mold_comparrison_daren_mueller_iowa_state_university_bugwood.jpg"
         alt="image of Sooty mould">
+        <div style="text-align: center"> 
+        Image courtesy of <strong> unkown</strong></a>
 </div>        
 <p>
     Sooty mould causes a layer of black mould the covers leaves and cones, it causes the leaves to
@@ -78,6 +84,8 @@ let mosaic = ` <div class="col-sm-12">
     <img class="pestimage"
         src="https://www.canr.msu.edu/uploads/images/Plant%20Ag/Apple_mosaic_on_hop.jpg"
         alt="Image of Mosaic Hops Virus">
+        <div style="text-align: center"> 
+        Image courtesy of <a href="https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards" target="_blank"><strong> Michighan State University</strong></a></div>
 </div>        
 <p>
     Caused once again by aphids, mosaic virus or hop mosaic virus is one of the most serious hop
@@ -96,6 +104,8 @@ let vert = ` <div class="col-sm-12">
 <div class="pestimagediv">
     <img class="pestimage" src="https://bugwoodcloud.org/images/768x512/0656092.jpg"
         alt="Image of Verticillium wilt">
+        <div style="text-align: center"> 
+        Image courtesy of <a href="https://www.britishhops.org.uk/pest-disease/" target="_blank"><strong> British Hops Association</strong></a></div>
 </div>        
 <p>
     This is a soil bourn disease, caused by two types of fungus, it causes yellowing of the leaves
@@ -117,6 +127,8 @@ let mildew = `<div class="col-sm-12">
     <img class="pestimage"
         src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Downy_and_Powdery_mildew_on_grape_leaf.JPG"
         alt="Image of Downy mildew">
+        <div style="text-align: center"> 
+        Image courtesy of <a href="https://en.wikipedia.org/wiki/Downy_mildew" target="_blank"><strong> Wikipedia</strong></a></div>
 </div>    
 <p>
     Downy Mildew, causes the plant to become stunted. The cones brown and curl and the underside of
@@ -140,6 +152,8 @@ let nute = `<div class="col-sm-12">
 <div class="pestimagediv">
     <img class="pestimage" src="https://onspecialtycrops.files.wordpress.com/2015/07/hopperburn.jpg"
         alt="Image of Nutrient deficiency in hop plants">
+        <div style="text-align: center"> 
+        Image courtesy of <strong> unkown</strong></a>
 </div>    
 <p>
     By far the most common problem, other than over or under watering, especially in potted hops plants are nutrient deficiencies. <br>Hops strip the
@@ -151,6 +165,7 @@ let nute = `<div class="col-sm-12">
     will allow, and avoid the idea of 99p bags of compost, cheaper grades of compost can
     commonly contain Chafer grubs that will have a field day chewing on you hops rhizome.
 </p>
+<p>More info on nutrient deficiencies can be found <a href="https://www.usahops.org/cabinet/data/9.pdf" target="_blank"><strong>here</strong></a></p>
 <div class="pestclosebuttondiv">
     <button class="pestclosebut btn btn-secondary buttonsclick" onclick="pestclose()" >Close</button>
 </div>
