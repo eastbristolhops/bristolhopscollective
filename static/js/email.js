@@ -7,7 +7,7 @@ window.onload = function() {
         <iframe onclick="none" src="https://giphy.com/embed/xT0xepcw2ZHNftb7aw" frameBorder="0" class="hopsSpinner"></iframe></div><span class="loadingText">SENDING PLEASE WAIT!</span>`;
         // generate the contact number value
         this.email_number.value = Math.random() * 100000 | 0;
-        emailjs.sendForm("gmail", "requestForm", this)
+        emailjs.sendForm("service_rl9pk8l", "requestForm", this)
         .then(function(response) {
             // if the response is good 
         console.log('SUCCESS!', response.status, response.text);
@@ -16,7 +16,7 @@ window.onload = function() {
         document.getElementById('contact-form').reset();
         }, 
         function(error) {
-        console.log('FAILED...', error);
+        console.log('FAILED...', error, error.text);
         document.getElementById('messageSent').innerHTML = `<span>"Something went wrong please refresh the page and try again"</span>`;
         });
     });
