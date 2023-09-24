@@ -108,20 +108,11 @@ a:hover{
 
 /* ------------------- Media Queries base.html -----------------*/
 
-@media only screen and (min-width: 2560px){
- 
-}
 
-@media only screen and (max-width: 2556px){
-
-}
-
-@media only screen and (max-width: 1440px){
-
-}
-
-@media only screen and (max-width: 1024px){
-
+@media only screen and (min-width: 981px){
+    .dropdown-menu{
+        width: 28vw;
+    }
 }
 
 @media only screen and (max-width: 768px){
