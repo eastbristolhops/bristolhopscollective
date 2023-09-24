@@ -1,3 +1,10 @@
 .emptydiv{
     height: 50px;
 }
+
+
+@media only screen and (min-width: 981px){
+    .dropdown-menu{
+        width: 28vw;
+    }
+}

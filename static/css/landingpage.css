@@ -8,6 +8,7 @@ body{
     min-height: 100vh;
 }
 
+
 .linksButtons{
     color:#F79767;
     text-decoration: underline;
@@ -128,6 +129,11 @@ p{
 
 /* ------------------- Media Queries -----------------*/
 
+@media only screen and (min-width: 981px){
+    .dropdown-menu{
+        width: 28vw;
+    }
+}
 
 @media only screen and (max-width: 768px){
     .announcevideoplayer{
@@ -140,8 +146,7 @@ p{
     }
     .welcomeheading{
         font-size: 2rem;
-    }
-  
+    } 
 }    
     
 @media only screen and (max-width: 425px){

@@ -6,13 +6,19 @@ let pumpclip = ['newbristol.png','EP_round2022.png', 'EP_round2022.png', 'EP_rou
                 'EP_round2022.png','EP_round2018.png', 'EP_round2017.png', 'EP_round2016.png'];
 let year = ['Hops Variety Breakdown 2023','Hops Variety Breakdown 2022', 'Hops Variety Breakdown  2021','Hops Variety Breakdown  2020','Hops Variety Breakdown  2019',
             'Hops Variety Breakdown 2018', 'Hops Variety Breakdown 2017', 'Hops Variety Breakdown 2016']
+let recipe = ['Pale Ale Malt, Medium Caramalt, Acidulated Malt, Torrefied Wheat, Green Hop Cones, US-50 American Ale Yeast','No Recipe Data', 'No Recipe Data','No Recipe Data','No Recipe Data',
+'No Recipe Data', 'No Recipe Data', 'No Recipe Data']
 let beerinfo = document.getElementById('hops_makeup_and_pump_clips');
+
 
 for(let i = 0; i < year.length; i ++){
     beerinfo.innerHTML += `
     <hr color="white">
     <div class="col-sm-12"> 
         <h3 class="newsheading">${year[i]}</h3>
+    </div>
+    <div class="col-sm-12"> 
+        <h4 class="newstory">${recipe[i]}</h4>
     </div>
     <div class="row hops_breakdown">
         <div class="col-md-6 pump_clip_image_div">

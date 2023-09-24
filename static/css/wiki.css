@@ -215,6 +215,14 @@ p{
     }
 }
 
+
+@media only screen and (min-width: 981px){
+    .dropdown-menu{
+        width: 28vw;
+    }
+}
+
+
 @media only screen and (max-width: 768px){
     
     .scrollToTop{
