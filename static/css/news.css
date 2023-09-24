@@ -109,6 +109,13 @@ table{
     text-align: center;
 }
 
+
+@media only screen and (min-width: 981px){
+    .dropdown-menu{
+        width: 28vw;
+    }
+}
+
 @media only screen and (max-width: 765px){
     .stat_image_div{
         padding-top: 20px;

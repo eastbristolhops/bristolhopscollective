@@ -69,6 +69,13 @@ li{
 
 /* -------------- Media queries --------------*/
 
+@media only screen and (min-width: 981px){
+    .dropdown-menu{
+        width: 28vw;
+    }
+}
+
+
 @media only screen and (max-width: 420px){
     .hidden-in-desktop{
         display: block;
