@@ -17,7 +17,7 @@ let events =[
 ]
 let events_dates_times = [
      'Wednesday 20th September',
-     'TBC',
+     'Friday 13th October',
      '<a href="pages/news.html">check it out.</a>',
      '<a href="pages/subscribe.html">sign up to the mailing list.</a>'
 ]
