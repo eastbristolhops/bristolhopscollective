@@ -5,7 +5,7 @@ let brewery = ["New Bristol Brewery","Dawkins Ales","Dawkins Ales","Dawkins Ales
 let beer_name = ["Home Grown","Easton Promise","Easton Promise","Easton Promise","Easton Promise","Easton Promise","Easton Promise","Easton Promise"];
 let info = ['bd2023.png','bd2022.png', 'bd2021.png', 'bd2020.png', 'bd2019.png', 'bd2018.png','nodatachart.png','nodatachart.png'];
 let abv = ["5.0","4.4","4.4","4.4","4.4","4.4","4.5","4.3"];
-let pumpclip = ['homegrown.png','EP_round2022.png', 'EP_round2022.png', 'EP_round2020.png',
+let pumpclip = ['homegrown.png','EP_round2022.png', 'EP_round2021.png', 'EP_round2020.png',
                 'EP_round2022.png','EP_round2018.png', 'EP_round2017.png', 'EP_round2016.png'];
 let year = ['Hops Variety Breakdown 2023','Hops Variety Breakdown 2022', 'Hops Variety Breakdown  2021','Hops Variety Breakdown  2020','Hops Variety Breakdown  2019',
             'Hops Variety Breakdown 2018', 'Hops Variety Breakdown 2017', 'Hops Variety Breakdown 2016'];
