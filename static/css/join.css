@@ -1,0 +1,19 @@
+.hide{
+    display: none;
+}
+
+.show{
+    display: flexbox;
+}
+
+.contactcontainer{
+    margin-bottom: 80px;
+}
+
+.unsure {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    cursor: pointer;
+}
+
