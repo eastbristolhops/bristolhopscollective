@@ -17,3 +17,8 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 425px){
+    .contactcontainer{
+        margin-bottom: 100px;
+    }
+}  

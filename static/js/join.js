@@ -1,36 +1,62 @@
 "use strict";
 
-let fill = document.getElementById("orderNum");
-let additional = document.getElementById("Additional");
-additional.addEventListener("click", display_qty);
+window.addEventListener("load", function() {
+    autofilluuid();
 
-window.onload = autofilluuid();
-/* Generate uuid */
+    const form = document.getElementById('order-form');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      .then((response) => response.json())
+      .then((responseData) =>{
+        if(responseData.result == "success"){
+            console.log(responseData.result);
+            form.reset();
+            autofilluuid();
+            // create a all good response
+        }
+      })
+      .catch(error => {
+            // create an error response
+      });
+    });
+  });
+
+// Generate uuid
 function generateUIDWithCollisionChecking() {
     let uid = ("0000" + ((Math.random() * Math.pow(36, 4)) | 0).toString(36)).slice(-10);
     return uid;
 }
 
-/* On the window load, This funtion will generate a uniqe UUID number that is unsed as an order number for the form */ 
+// On the window load, This funtion will generate a uniqe UUID number that is unsed as an order number for the form 
+const fill = document.getElementById("orderNum");
 function autofilluuid(){
     fill.value = generateUIDWithCollisionChecking().toUpperCase();
     console.log( fill.value);
 };
 
-function display_qty(){
-    let AdditionalQTY = document.getElementById("AdditionalQTY");
-    let AdditionalQTYLable = document.getElementById("AdditionalQTYLable");
-    let additionl_space = document.getElementById("additionl_space");
+// This function will show or hide unessary form data that is not required for a certain sale
+let additional = document.getElementById("Additional");
+additional.addEventListener("click", function(){
+    const AdditionalQTY = document.getElementById("AdditionalQTY");
+    const AdditionalQTYLable = document.getElementById("AdditionalQTYLable");
+    const additionl_space = document.getElementById("additionl_space");
 
     if(additional.value == "Dwarf" || additional.value == "Vigarouse"){
         AdditionalQTY.classList.toggle("hide");
         AdditionalQTYLable.classList.toggle("hide");
         additionl_space.classList.toggle("hide");
     }
-}
+})
 
-let help = document.getElementById("help");
+// This will show or hide the help section
+const help = document.getElementById("help");
 let show_info = () =>{
     help.classList.toggle("hide");   
 }
-let unsure = document.getElementById("unsure").addEventListener("click", show_info);
+const unsure = document.getElementById("unsure").addEventListener("click", show_info);
