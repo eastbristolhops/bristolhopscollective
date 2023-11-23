@@ -89,18 +89,18 @@ function autofilluuid(){
 
 let additional = document.getElementById("Additional");
 const additionalQTY = document.getElementById("AdditionalQTY");
-additional.addEventListener("click", function(){
-    // This function will show or hide unessary form data that is not required for a certain sale
-    const additionalQTY = document.getElementById("AdditionalQTY");
-    const additionalQTYLable = document.getElementById("AdditionalQTYLable");
-    const additionl_space = document.getElementById("additionl_space");
+// additional.addEventListener("click", function(){
+//     // This function will show or hide unessary form data that is not required for a certain sale
+//     const additionalQTY = document.getElementById("AdditionalQTY");
+//     const additionalQTYLable = document.getElementById("AdditionalQTYLable");
+//     const additionl_space = document.getElementById("additionl_space");
 
-    if(additional.value == "Dwarf" || additional.value == "Vigarouse"){
-        additionalQTY.classList.toggle("hide");
-        additionalQTYLable.classList.toggle("hide");
-        additionl_space.classList.toggle("hide");
-    }
-})
+//     if(additional.value == "Dwarf" || additional.value == "Vigarouse"){
+//         additionalQTY.classList.toggle("hide");
+//         additionalQTYLable.classList.toggle("hide");
+//         additionl_space.classList.toggle("hide");
+//     }
+// })
 
 
 const help = document.getElementById("help");
@@ -112,13 +112,13 @@ const unsure = document.getElementById("unsure").addEventListener("click", show_
 
 // Update total values on the form
 const form_click = document.getElementById("order-form").addEventListener("click", update_values);
-
+const form_click_mobile = document.getElementById("order-form").addEventListener("touchend", update_values);
 
 function update_values(){
   // Update totals order value and text in relevent places
   let hop_pack_qty = document.getElementById("hopPackQTY").value;
   let packtype = document.getElementById("hopPackType").value;
-  let fill_hop_name = document.getElementById("hop_type");
+  //let fill_hop_name = document.getElementById("hop_type");
   additional.value;
   additionalQTY.value;
   let pack_sub_total = 0;
@@ -128,13 +128,14 @@ function update_values(){
     pack_sub_total = hop_pack_qty * pack_price;
   }
   
-  if(additional.value != "Select" || "No"){
-    /* if the value of additional hops is a valid selection fill the additional 
-    text value line with the correct type and update the order value total */
-    if(additional.value == "Vigarouse")fill_hop_name.innerHTML = hop_type_array[0]
-    else fill_hop_name.innerHTML = hop_type_array[1];
-    additional_sub_total = additionalQTY.value * extra_hop;
-  }
+  // if(additional.value != "Select" || "No"){
+  //   /* if the value of additional hops is a valid selection fill the additional 
+  //   text value line with the correct type and update the order value total */
+  //   if(additional.value == "Vigarouse")fill_hop_name.innerHTML = hop_type_array[0]
+  //   else fill_hop_name.innerHTML = hop_type_array[1];
+  //   additional_sub_total = additionalQTY.value * extra_hop;
+  // }
+  additional_sub_total = additionalQTY.value * extra_hop;
 
   total_value = pack_sub_total + additional_sub_total;
   order_total.innerHTML = parseFloat(total_value).toFixed(2);
