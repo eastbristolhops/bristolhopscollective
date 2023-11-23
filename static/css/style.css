@@ -24,6 +24,9 @@
     padding-right: 20px!important;
 }
 
+.dd-link{
+    font-size: 1.5rem;
+}
 .nav-link:hover{
     color: #F79767;
 }
