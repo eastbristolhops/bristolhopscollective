@@ -148,7 +148,7 @@
                           <option value= "5">5</option>
                         </select>
                         <br>
-                        <label for="Additional">Do you require any additionl Rhyzomes?</label>
+                        <label for="Additional">Do you require any additional Rhyzomes?</label>
                         <select name="Additional" id="Additional" required>
                             <option disabled selected value> --Select-- </option>
                             <option value="No">No</option>
@@ -156,16 +156,17 @@
                             <option value="Dwarf">Dwarf variety</option>
                         </select>
                         <br>
-                        <label class="hide" id="AdditionalQTYLable" for="AdditionalQTY">How many additional <span id="hop_type"></span> Rhyzomes do you require?:</label>
-                        <select class="hide" id="AdditionalQTY" name="AdditionalQTY">
-                          <option disabled selected value>0</option>
+                        <label id="AdditionalQTYLable" for="AdditionalQTY">How many additional Rhyzomes do you require?:</label>
+                        <!-- <label class="hide" id="AdditionalQTYLable" for="AdditionalQTY">How many additional <span id="hop_type"></span> Rhyzomes do you require?:</label> -->
+                        <select id="AdditionalQTY" name="AdditionalQTY">
+                          <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select>
-                        <br class="hide" id="additionl_space">
+                        <br>
                         <label for="Payment" >How would you like to pay?</label>
                         <select name="Payment" id="Payment" required>
                             <option disabled selected value> --Select-- </option>
@@ -174,7 +175,7 @@
                         </select>
                         <br>
                         <div>
-                          Order Total: £<span name="Order Total" id="Order Total">0.00</span>
+                          Order Total: £<span name="Order Total" id="Order Total">0.00 </span>
                         </div>
                         <span class="accepttick">  
                         <input type="checkbox" id="terms" name="terms" value="terms" required>
