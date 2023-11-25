@@ -1,7 +1,7 @@
 "use strict";
 
 const pack_price = 22;
-const extra_hop = 12.50;
+const extra_hop = 13;
 let total_value = 0;
 let hop_type_array = ["Standard variety" , "Dwarf variety"];
 let order_total = document.getElementById("Order Total");
