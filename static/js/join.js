@@ -48,7 +48,9 @@ function setOverlay(action){
     case "success":
       // notifys the user that the order has been placed successfully
       fill_info.innerHTML = `<span class="reply_text">Welcome on board! <br> Your order has been submitted and a member of 
-      our team will be in touch in due course. <br><br> If you would like to place another order <a class="signupbutton" onclick="reset_form()">click Here</a></span>`;
+      our team will be in touch in due course. <br>
+      <strong><i>Please keep an eye on your spam folder!</i></strong>
+      <br><br> If you would like to place another order <a class="signupbutton" onclick="reset_form()">click Here</a></span>`;
       break;
     case "error":
       // notifys the user something has gone wrong and allows the page to be refreshed
