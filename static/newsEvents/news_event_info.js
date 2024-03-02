@@ -11,6 +11,6 @@ let events =[
      'For updates about Bristol Hops Collective'
 ]
 let events_dates_times = [
-     'Last orders for this years hops will be 1st of March 2024',
+     'Last orders for this years hops will be 10th of March 2024',
      '<a href="pages/subscribe.html">sign up to the mailing list.</a>'
 ]
