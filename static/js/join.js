@@ -7,8 +7,7 @@ let hop_type_array = ["Standard variety" , "Dwarf variety"];
 let order_total = document.getElementById("Order Total");
 
 window.addEventListener("load", function() {
-    autofilluuid();  
-    setOverlay("success");                        // create the initial UUID for a new order
+    autofilluuid();                        // create the initial UUID for a new order
     const form = document.getElementById('order-form');
     form.addEventListener("submit", function(e) {
       e.preventDefault();                   // dont allow page to refresh
