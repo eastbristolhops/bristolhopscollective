@@ -7,7 +7,8 @@ let hop_type_array = ["Standard variety" , "Dwarf variety"];
 let order_total = document.getElementById("Order Total");
 
 window.addEventListener("load", function() {
-    autofilluuid();                         // create the initial UUID for a new order
+    autofilluuid();  
+    setOverlay("success");                        // create the initial UUID for a new order
     const form = document.getElementById('order-form');
     form.addEventListener("submit", function(e) {
       e.preventDefault();                   // dont allow page to refresh
@@ -32,6 +33,7 @@ window.addEventListener("load", function() {
     });
   });
 
+
 function setOverlay(action){
   // the over lay lets the user have some interation with what is happening at any given time.
   const overlay = document.getElementById("form_overlay");
@@ -47,8 +49,8 @@ function setOverlay(action){
       break;
     case "success":
       // notifys the user that the order has been placed successfully
-      fill_info.innerHTML = `<span class="reply_text">Welcome on board! <br> Your order has been submitted and a member of 
-      our team will be in touch in due course. <br>
+      fill_info.innerHTML = `<span class="reply_text">Welcome on board! <br> Your order has been submitted and <span style='color: red'>a member of 
+      our team will be in touch with payment details in due course.</span> <br>
       <strong><i>Please keep an eye on your spam folder!</i></strong>
       <br><br> If you would like to place another order <a class="signupbutton" onclick="reset_form()">click Here</a></span>`;
       break;

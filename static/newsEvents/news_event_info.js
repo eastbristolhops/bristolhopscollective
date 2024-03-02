@@ -1,8 +1,9 @@
 "use strict";
 
 let news =[
-    "<strong>Thinking of Joining us?</strong> becomeing part of Bristol Hops Collective could not be simpler, \
-    head on down to the  <a class='' href='join.html'>Join Us</a> page we are now taking pre-orders for hops for the 2024 grow season."
+     "<span style='color:red'><strong>BIG NEWS</strong></span> Due to popular demand we are extending this years recruitment drive by\
+     1 week, so if you want to get involved you have unitll Sunday 10th March 2024 \
+      <a class='' href='join.html'>Join Us</a> ."
 ]
 let events =[
      "For your opportunity to become\
