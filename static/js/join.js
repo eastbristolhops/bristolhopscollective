@@ -7,7 +7,8 @@ let hop_type_array = ["Standard variety" , "Dwarf variety"];
 let order_total = document.getElementById("Order Total");
 
 window.addEventListener("load", function() {
-    autofilluuid();                        // create the initial UUID for a new order
+    autofilluuid();  
+    setOverlay("sold_out");                       // create the initial UUID for a new order
     const form = document.getElementById('order-form');
     form.addEventListener("submit", function(e) {
       e.preventDefault();                   // dont allow page to refresh
@@ -58,6 +59,18 @@ function setOverlay(action){
       fill_info.innerHTML = `<span class="reply_text">Oops something went wrong! <br> Click here to <a class="signupbutton" onclick="refresh()">Try Again</a> <br> If this keeps happening click
       <a class="nav-link" href="../pages/contact.html">Contact Us</a></span>`;
       break;
+    case "sold_out":
+        // notifys the user drive has now stopped
+        fill_info.innerHTML = `<span class="reply_text">We are SOLD OUT <br> For more info on when pre orders for ${date +1} will go on sale please sign up to the mailing list, but if you would like to get involved 
+        checkout out our socials 
+        <a href="https://www.facebook.com/groups/eastbristolhops" target="_blank"><i
+                  class="fab fa-facebook-square footer-icon" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/eastbristolhops?lang=en" target="_blank"><i
+                  class="fab fa-twitter-square footer-icon" aria-hidden="true"></i></a>
+              <a href="https://instagram.com/bristolhopscollective?igshid=MzRlODBiNWFlZA=="
+               target="_blank"><i class="fab fa-instagram-square footer-icon" aria-hidden="true"></i></a> for events and updates!
+        <a class="nav-link" href="../pages/subscribe.html">Subscribe</a></span>`;
+        break;
     default:
       // clears any overlay from the from alloqing the user to make another order
       overlay.innerHTML = ``;
