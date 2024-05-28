@@ -1,0 +1,74 @@
+
+.background_about_page{
+    background-image: url('../media/history/oldcrew.jpg');                      
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.aboutbox{
+    color: #fff;
+    background-color: rgba(60,60,60,0.9);
+    width: 90%;
+    height: auto; 
+    padding: 30px; 
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.linksButtons{
+    color: #F79767;
+}
+
+.friendsimage{
+    width: 80%;
+    height: auto;
+    border-radius: 20%;
+    border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+}
+
+.friendimagerow{
+    text-align: center;
+}
+
+.oldcrewheading{
+    text-align: center;
+    font-family: 'Unkempt', cursive;
+    color:#C6AE34;
+}
+
+.oldcrewstory{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.subheadingpromisediv{
+    font-family: 'Unkempt', cursive;
+    color:#C6AE34;
+}
+
+.abouthebrew{
+    font-size: 1.3rem;
+}
+
+.brewrecipe{
+    font-size: 1.3rem;
+}
+
+.promisediv{
+    text-align: center;
+}
+
+.pumpclipimage{
+    width: 70%;
+    height: auto;
+}

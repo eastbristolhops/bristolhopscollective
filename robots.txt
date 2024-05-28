@@ -1,1 +1,3 @@
+user-agent: *
+
 Sitemap: https://bristolhopscollective.co.uk/sitemap.xml

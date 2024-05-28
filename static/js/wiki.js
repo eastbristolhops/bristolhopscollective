@@ -1,27 +1,4 @@
-/* This function will user jQuery to show hide the video section into the wiki page for ph testing info */
-
-function showvideos(){
-    // this function injects the html with the videos and changes the attribute 
-    // of the show videos button to hide videos.
-    // It also changes the value of the button to a different name.
-    slideDown('videos');
-    document.getElementById('soilphheading').scrollIntoView({behavior: 'smooth'});
-    document.getElementById('showvidbutton').setAttribute('onclick','hidevideos()');
-    let butname = document.getElementById('showvidbutton');
-    butname.value = "Hide Videos";
-    butname.classList.add("vidbut"); // addes a class to the button after the js injection to move the lower margin.
-};
-
-/* This function will hide the video section on the wiki page */
-
-function hidevideos(){
-    // This function hides the videos and changes the button attribute back to showvideos onclick.
-    // It also changes the value of the button to a different name
-    slideUp('videos');
-    document.getElementById('showvidbutton').setAttribute('onclick','showvideos()');
-    let butname = document.getElementById('showvidbutton');
-    butname.value = "Show Videos";
-}
+"use strict";
 
 /* This function displays the pests sections */
 
@@ -54,7 +31,7 @@ function pest(pest){
 /* This function scrolls the pestdislay in to view and hides the back to top button */
 
 function WikiPestBehaviour(){
-    itemToUnfade =  document.getElementById('pestdisplay');
+    let itemToUnfade =  document.getElementById('pestdisplay');
     unfade(itemToUnfade);
     document.getElementById('pestheading').scrollIntoView({behavior: 'smooth'});
     document.getElementById('scrollToTop').className = 'hideScrollToTop';
@@ -64,8 +41,48 @@ function WikiPestBehaviour(){
 and shows the back to top button. */
 
 function pestclose(){
-    itemToUnfade = document.getElementById('pestdisplay');
+    let itemToUnfade = document.getElementById('pestdisplay');
     fade(itemToUnfade);
     document.getElementById('pestbuttons').scrollIntoView({behavior: 'smooth', block: 'center'});
     document.getElementById('scrollToTop').className = 'scrollToTop';
+}
+
+/*These functions slide the video section in and out */
+
+function slideDown(slidedown) {
+    const SlideDown = elem => elem.style.height = `${elem.scrollHeight}px`;
+    SlideDown(document.getElementById(slidedown));
+}
+
+function slideUp(slideup) {
+    const SlideUp = elem => elem.style.height = `${elem.Height = "0"}px`;
+    SlideUp(document.getElementById(slideup));
+}
+
+//fade out
+function fade(element) {
+    let op = 1;  // initial opacity
+    let timer = setInterval(function () {
+        if (op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
+
+// fade in
+function unfade(element) {
+    let op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    let timer = setInterval(function () {
+        if (op >= 1) {
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 40);
 }

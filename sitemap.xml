@@ -12,11 +12,6 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://bristolhopscollective.co.uk/index.html</loc>
-  <lastmod>2023-09-11T07:09:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://bristolhopscollective.co.uk/join.html</loc>
   <lastmod>2023-09-11T07:09:47+00:00</lastmod>
   <priority>0.80</priority>
@@ -32,12 +27,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://bristolhopscollective.co.uk/pages/microscope.html</loc>
-  <lastmod>2023-09-11T07:09:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bristolhopscollective.co.uk/pages/gallery.html</loc>
+  <loc>https://bristolhopscollective.co.uk/pages/beers.html</loc>
   <lastmod>2023-09-11T07:09:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>

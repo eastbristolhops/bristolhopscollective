@@ -1,0 +1,76 @@
+/* --------------------- modal ------------------------*/
+
+.modal-dialog{
+    max-width: 50%;
+    height: auto;
+} 
+
+.modal-ebh-image{
+    width: 50%;
+    height: auto;
+}
+
+.modalimagebox{
+    text-align: center; 
+}
+
+.card-title{
+   text-align: center;
+}
+
+.close{
+    padding-top: 2px;
+}
+
+.buttons{
+    text-align: center;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.button-move-left{
+    padding-left: 10px;
+    font-weight:400;
+}
+
+/* ------------------- Media Queries -----------------*/
+
+@media only screen and (min-width: 981px){
+}
+
+@media only screen and (max-width: 780px){
+    .modal-ebh-image{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 577px){
+    .modal-dialog{
+        padding-left: 20px;
+        max-width: 90%;
+        height: auto;
+    } 
+  
+}    
+    
+@media only screen and (max-width: 425px){
+    .modal-ebh-image{
+        width: 80%;
+    }
+    .modal-dialog{
+        padding-left: 10px;
+    } 
+}    
+    
+@media only screen and (max-width: 375px){
+    .modal-dialog{
+        max-width: 90%;
+        height: auto;
+    } 
+  
+}    
+    
+@media only screen and (max-width: 320px){
+   
+}    

@@ -1,3 +1,4 @@
+"use strict";
 /* This function starts when the page loads and enables the autoscroll funtion */ 
 
 $(document).ready(function(){
