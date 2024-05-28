@@ -1,6 +1,6 @@
 "use strict";
 
-//window.addEventListener("load", load_chart);
+window.addEventListener("load", load_chart);
 
 let media_folder = '../static/media/beers/';
 let brewery = ["New Bristol Brewery","Dawkins Ales","Dawkins Ales","Dawkins Ales","Dawkins Ales","Dawkins Ales","Dawkins Ales","Dawkins Ales"];
@@ -93,8 +93,12 @@ for(let i = 0; i < year.length; i ++){
   `;
 }
 
-setTimeout(load_chart,1000);
+
 function load_chart(){
+  setTimeout(build_chart, 1000);
+}
+
+let build_chart = () => {
   for(let i = 0; i < year.length; i ++){
     build(String([i]), dataPointsHops[i], "beer");
   }

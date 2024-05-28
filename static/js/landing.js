@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     $(".fade_oval").fadeIn(3000).delay(2000).fadeOut(1000);
     $(".fade_slogan").delay(6000).fadeIn(4000);
+    load_chart();
 });
 
 let brewkettleyear = document.getElementById('brewkettleyear');
@@ -61,5 +62,12 @@ let total_hops = document.getElementById("total-number-hops");
 total_hops.innerHTML = `${get_totals("hops")}`;
 
 let charts = document.getElementById("chart-div");
-build("people-chart", dataPointsPeople, "contributers");
-build("hops-chart", dataPointsYearYield, "beer");
+
+function load_chart(){
+    setTimeout(build_chart, 1500);
+  }
+  
+let build_chart = () => {
+    build("people-chart", dataPointsPeople, "contributers");
+    build("hops-chart", dataPointsYearYield, "beer");
+}
