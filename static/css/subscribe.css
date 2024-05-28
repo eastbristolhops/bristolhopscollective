@@ -1,25 +1,13 @@
 
-footer{
-    position: absolute;
-}
-
-.background_image_mailinglist{
-    background-image: url('../media/friends.jpg');                      
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat:no-repeat;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    min-height: 100vh;
+.container{
+    padding-bottom: 30px;
 }
 
 .formheading{
+    font-family: MessengerTexture , sans-serif; 
+    font-size: 2.2rem;  
     text-align: center;
-    font-family: 'Unkempt', cursive;
-    color:#C6AE34;
-    font-size: 2.5rem;
+    color: rgb(81 95 42);
 }
 
 .signupbutton{
@@ -35,17 +23,9 @@ footer{
     text-align: center;
 }
 
-a{
-    color: #F79767;
-}
-
-a:hover{
-    color:#C6AE34;
-}
-
 .maillistbox{
-    color: #fff;
-    background-color: rgba(60,60,60,0.8);
+    color: black;
+    /* background-color: rgba(60,60,60,0.8); */
     max-width: 80%;
     height: auto; 
     padding: 30px; 
@@ -110,9 +90,7 @@ a:hover{
 
 
 @media only screen and (min-width: 981px){
-    .dropdown-menu{
-        width: 28vw;
-    }
+  
 }
 
 @media only screen and (max-width: 768px){

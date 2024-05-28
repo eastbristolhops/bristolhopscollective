@@ -2,30 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="East Bristol Hops contact us, a quick and easy way to get in touch with any 
+    <meta name="description" content="Bristol Hops Collective contact us, a quick and easy way to get in touch with any 
     querys about the hops growing association.">
-    <meta name="keywords" content="hops, brewing hops, contact form east bristol hops, 
-    east bristol hops contact, growers association, bristol, beer, bristol hops collective, bristolhopscollective">
-    <script src="https://kit.fontawesome.com/a71ecb4f79.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="keywords" content="hops, brewing hops, contact form bristol hops collective, 
+    growers association, bristol, beer, bristol hops collective, bristolhopscollective">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Unkempt:wght@700&display=swap"
-      rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico">
-    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/nav.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/footer.css" type="text/css">
     <link rel="stylesheet" href="../static/css/scrolltotop.css" type="text/css">
-    <script src="../static/js/scrolltotop.js"></script>
-
     <link rel="stylesheet" href="../static/css/contact.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/consent.css" type="text/css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
@@ -34,71 +28,22 @@
     </script>
 
     <title>Contact us | bristolhopscollective.co.uk</title>
+    <special-header></special-header>  
 </head>
-
-<body class="background_image_contact">
-        <!--Displays background image on selected page -->
-        <header>
-          <nav class="navbar navbar-expand-lg nav_bar">
-            <span>
-              <a id="mobilelogo" href="../index.html"><img class="ebhlogomodile"
-                  src="../static/media/colectiveheaderlogo.png" alt="logo"></a></span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" id="navtogglericon"><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse logonavbar" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link navspaceleft" href="../pages/wiki.html">HopsWiki</a>
-                </li>
-                <li class="nav-item">
-                  <a href="../index.html"><img class="hop"
-                      src="../static/media/hopleft.png" alt="logo"></a>
-                </li>
-                <li class="nav-item">
-                  <a href="../index.html"><img class="ebhlogo"
-                    src="../static/media/colectiveheaderlogo.png" alt="logo"></a>
-                </li>
-                <li class="nav-item">
-                  <a href="../index.html"><img class="hop"
-                      src="../static/media/hopright.png" alt="logo"></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                      More
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="nav-link dd-link" href="../pages/news.html">News</a></li>
-                      <li><a class="nav-link dd-link" href="../pages/microscope.html">Under The Microscope</a></li>
-                      <li><a class="nav-link dd-link" href="../pages/history.html">History</a></li>
-                      <li><a class="nav-link dd-link" href="../pages/team.html">Meet The Team</a></li>
-                    </ul>
-              </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../join.html">Join Us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-
+<body>
+    
     <div class="container contactcontainer">
         <div class="row">
             <div class="col-sm-12">
-                <h1 class="contactheading">Contact Us</h1>
-                <p class="contactsubheading">
-                    Please fill out this form and a member of our team will be in touch as soon as possible.
-                    If it's the mailing list signup you are looking for click<a class="signupbutton"
-                        href="subscribe.html"> Here!</a>
-                </p>
+                <div class="contactheading">Contact Us</div>
+                <div class="contactsubheading">
+                    For the Mailing list<a class=""
+                        href="subscribe.html"> Here</a>
+                </div>
             </div>
         </div>
         <div class="row formRow">
-            <div class="col formBox">
+            <div class="col formBox position-relative">
                 <span id="overlayBox"></span>
                 <div class="center-form">
                     <form id="contact-form">
@@ -107,18 +52,19 @@
                         <input type="email" name="from_email" id="emailaddress" class="form-control" placeholder="Email"
                             required>
                         <select class="custom-select text-muted" name="from_request" id="inlineFormCustomSelectPref">
-                            <option selected>Please Select A Request...</option>
+                            <option disabled selected hidden>Please Select A Request...</option>
                             <option name="from_request" value="membership request">Membership Request</option>
                             <option name="from_request" value="How to buy Hops">How To Buy Hops</option>
                             <option name="from_request" value="Remove my details">Remove My Details</option>
                             <option name="from_request" value="press/media">Media</option>
+                            <option name="from_request" value="Collaberation Request">Collaberation Request</option>
                             <option name="from_request" value="Other">Other</option>
                         </select>
                         <textarea rows="5" name="message" id="projectsummery" placeholder="Message" class="form-control"
                             required></textarea>
                         <span class="accepttick">  
                         <input type="checkbox" id="terms" name="terms" value="terms" required>
-                        <span class="terms" for="terms">Accept, you agree to our <a class="signupbutton"
+                        <span class="terms" for="terms">Accept, you agree to our <a class=""
                             href="termsofuse.html"> 
                             Terms & Conditions</a></span></span>  
                         <div class="form-row text-center">
@@ -132,27 +78,16 @@
             </div>
         </div>
     </div>
-    <div class="spacerdiv"></div>
-      
-    <footer>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-12">
-              <a href="https://www.facebook.com/groups/eastbristolhops" target="_blank"><i
-                  class="fab fa-facebook-square footer-icon" aria-hidden="true"></i></a>
-              <a href="https://twitter.com/eastbristolhops?lang=en" target="_blank"><i
-                  class="fab fa-twitter-square footer-icon" aria-hidden="true"></i></a>
-              <a href="https://instagram.com/bristolhopscollective?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram-square footer-icon" aria-hidden="true"></i></a>
-              <div class="copyright-footer">Copyright-&copy; <span id="footeryear"></span>
-                 Bristol Hops Collective <a class="footer-tc"
-                  href="termsofuse.html">-Terms & Consitions-Privacy Policy</a></div>
-            </div>
-          </div>
-        </div>
-      </footer>
+
+    <special-footer></special-footer> 
+    <special-banner></special-banner>   
     
- <!--=============================================== Java Script ===================================================-->
- <script src="../static/js/email.js"></script>
- <script src="../static/js/footerdate.js"></script>
+    <!--=============================================== Java Script ===================================================-->
+<script src="../static/js/consent_banner.js"></script> 
+<script src="../static/js/nav.js"></script>
+<script src="../static/js/email.js"></script>
+<script src="../static/js/footer.js"></script>
+<script src="../static/js/scrolltotop.js"></script>
+
 </body>
 </html>

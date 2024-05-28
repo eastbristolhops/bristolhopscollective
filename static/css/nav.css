@@ -1,0 +1,160 @@
+body{ 
+    font-family: 'Roboto', sans-serif;
+    background-color: #F3F5F9;
+}
+
+
+@font-face { 
+    font-family: 'Messenger'; 
+    src: url('../fonts/MessengerRegular-VGdWw.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+
+@font-face { 
+    font-family: 'MessengerRough'; 
+    src: url('../fonts/MessengerRough-JRwWx.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+
+@font-face { 
+    font-family: 'MessengerTexture'; 
+    src: url('../fonts/MessengerTexture-GOX6D.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+
+
+/* ------------------- Navigation -----------------*/
+
+.navbar-logo{
+    width: 150px;
+    height: auto;
+}
+
+.navbar-brand{
+    margin: 0;
+}
+
+.navbar,.dropdown-menu{
+    background-color: rgba(60,60,60,0.9);
+}
+
+.dropdown-menu{
+    width: 10vw;
+}
+
+.nav-link{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.nav-link:focus{
+    color: gray;
+}
+
+.nav-link:hover{
+    color: gray;
+}
+
+.navbar-toggler-icon,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+.logonavbar{
+    justify-content: center;
+}
+
+.nav-item-padding{
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* ------------------- Media Queries -----------------*/
+
+
+@media only screen and (min-width: 991px){
+    #mobilelogo{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1038px){
+    .nav-link{
+        font-size: 1.8rem;
+    }
+    .nav-item-padding{
+        padding-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+
+    #mobilelogo{
+        display: block;
+    }
+
+    .navbar-logo{
+        display: none;
+    }
+
+    .logomodile{
+        width: 200px!important;
+        height: auto!important;
+    }
+
+    .navbar-toggler-icon{
+        color: white;
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    .nav-link{
+        font-size: 1.8rem;
+    }
+
+    .nav-item-padding{
+        padding-top: 1px;
+    }
+
+    .dropdown-menu{
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    #navtogglericon{
+        color: white;
+        font-size: 2rem;
+        margin-top: 8px;
+    }
+    .nav-link{
+        font-size: 1.3rem;
+    }
+}   
+
+@media only screen and (max-width: 425px){
+
+    .nav-link{
+        font-size: 1rem;
+    }    
+}    
+   
+@media only screen and (max-width: 375px){
+
+}    
+
+@media only screen and (max-width: 320px){
+
+    
+}    

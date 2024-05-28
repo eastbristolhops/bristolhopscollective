@@ -1,0 +1,158 @@
+.overlay_image{
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.logo_overlay{
+    width: 30vw;
+    border-radius: 50%;
+    display: none;
+}
+
+.logo_overlay2{
+    width: 80vw;
+    display: none;
+}
+
+.landingcontainer{
+    position: relative;
+    min-height: 100vh;
+}
+
+.landingsubparagraph{
+    font-family: MessengerTexture , sans-serif; 
+    color: rgb(81 95 42);
+    font-size: 2.2rem; 
+    padding-top: 20px;
+}
+
+p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.landingimages{
+    width: 80%;
+    height: auto;
+    border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+}
+
+.center{
+    text-align: center;
+}
+
+.carousel{
+    position: absolute;
+}
+
+.carousel-item{
+    height:30vw;
+}
+
+.carousel-inner{
+    width: 100%;
+}
+
+.carouselimage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ecohops{
+    width: 60%;
+    height: auto;
+    border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.ecohops-div{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.chart-div-center{
+    text-align: -webkit-center;
+}
+
+.chartdiv {
+    width: 80%;
+    height: 500px;
+}
+
+/* ---------------- dates for diary -----------------*/
+
+.dates{
+    font-size: 1.4rem;
+}
+
+.dates_disclaimer{
+    padding-top:30px;
+    font-size: 1rem;
+}
+
+
+/* ------------------- Media Queries -----------------*/
+
+@media only screen and (min-width: 981px){
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+       max-width: 90%;
+    }
+    .landingsubparagraph{
+        font-size: 2.0rem; 
+        padding-top: 20px;
+    }
+    p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+} 
+
+@media only screen and (max-width: 576px){
+
+
+}    
+   
+    
+@media only screen and (max-width: 425px){
+
+    .landingsubparagraph{
+        font-size: 1rem;
+    }
+    .dates{
+        font-size: 1.1rem;
+    }
+    .dates_disclaimer{
+        font-size: 0.9rem;
+    }
+    .announcevideoplayer{
+        width: 80%; 
+    }  
+    .carousel-item{
+        height: 50vw;
+    }
+}    
+    
+@media only screen and (max-width: 375px){
+  
+    .landingsubparagraph{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}    
+    
+@media only screen and (max-width: 320px){
+   
+}    
