@@ -1,5 +1,7 @@
 "use strict";
 
+//window.addEventListener("load", load_chart);
+
 let media_folder = '../static/media/beers/';
 let brewery = ["New Bristol Brewery","Dawkins Ales","Dawkins Ales","Dawkins Ales","Dawkins Ales","Dawkins Ales","Dawkins Ales","Dawkins Ales"];
 let beer_name = ["Home Grown","Easton Promise","Easton Promise","Easton Promise","Easton Promise","Easton Promise","Easton Promise","Easton Promise"];
@@ -72,7 +74,6 @@ const dataPointsHops = [
 
 for(let i = 0; i < year.length; i ++){
     beerinfo.innerHTML += `
-  
     <div class="hops_breakdown">
       <div class="col-md-12 pump_clip_image_div">
         <img class="pump_clip" src="${media_folder}${pumpclip[i]}" alt="${pumpclip[i]} image">
@@ -90,7 +91,13 @@ for(let i = 0; i < year.length; i ++){
           <div class="chartdiv" id="${[i]}"></div>
         </div>
   `;
- build(String([i]), dataPointsHops[i], "beer");
+}
+
+setTimeout(load_chart,1000);
+function load_chart(){
+  for(let i = 0; i < year.length; i ++){
+    build(String([i]), dataPointsHops[i], "beer");
+  }
 }
 
 let totalweightinfo = document.getElementById("totalweightinfo").innerHTML = `${get_totals(dataPointsHops)}`;
