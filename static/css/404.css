@@ -1,0 +1,126 @@
+.background_image_wiki{
+    background-image: url('../media/404/hopsback.jpg ');                 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+}
+.wikibox{
+    color: #fff;
+    background-color: rgba(60,60,60,0.8);
+    width: 80%;
+    height: auto; 
+    padding: 30px; 
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.heading{
+    font-size: 15rem;
+    text-align: center;
+    font-family: messengerTexture;
+    margin-top: -80px;
+    color:#C6AE34;
+}
+.lowerheading{
+    font-size: 3rem;
+    text-align: center;
+    font-family: messengerTexture;
+    margin-top: -80px;
+}
+.subheading{
+    font-size: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+.email_link{
+    color: lightgray;
+}
+.homeButton {
+    opacity: 1;
+    font-size: 1.3rem;
+    animation: fade 2s linear infinite;
+    margin-top: 10px;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0.4 }
+  50% { opacity: 1 }
+}
+
+@media only screen and (max-width: 768px){
+    .heading{
+        font-size: 9rem;
+        margin-top: 0px;
+        margin-top: -70px;
+    }
+    .lowerheading{
+        margin-top: -60px;
+    }
+    .subheading{
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: sans-serif;
+        margin-top: 0px;
+        color: white;
+    }
+  
+}  
+
+@media only screen and (max-width: 590px){
+    .lowerheading{
+        margin-top: -40px;
+        font-size: 1.8rem;
+    }
+    .subheading{
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: sans-serif;
+        margin-top: 0px;
+        color: white;
+    }
+ 
+}   
+
+@media only screen and (max-width: 473px){
+    .heading{
+        font-size: 6rem;
+        margin-top: -40px;
+    }
+    .lowerheading{
+        margin-top: -30px;
+        font-size: 1.8rem;
+    }
+    .subheading{
+        font-size: 1.1rem;
+        text-align: center;
+        font-family: sans-serif;
+        margin-top: 0px;
+        color: white;
+    }
+  
+} 
+   
+@media only screen and (max-width: 375px){
+    .lowerheading{
+        margin-top: -30px;
+        font-size: 1.2rem;
+    }
+    .subheading{
+        font-size: 1.1rem;
+        text-align: center;
+        font-family: sans-serif;
+        margin-top: 0px;
+        color: white;
+    }
+  
+}    
+
+@media only screen and (max-width: 320px){
+}

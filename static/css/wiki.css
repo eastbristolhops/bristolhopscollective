@@ -1,16 +1,25 @@
 
-body{ 
-    font-family: 'Roboto', sans-serif;
-}
-
-p{
-    font-size: 1.2rem;
+.navbar,.dropdown-menu{
+    background-color: rgba(60,60,60,1);
 }
 
 .buttonsclick{
     border: 1px solid white;
     margin: 3px;
 }
+
+.background_image{
+    background-image: url('../media/landing/group.jpg');                      
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    min-height: 100vh;
+}
+
 
 .buttonsclick:hover{
     border: 1px solid white;
@@ -23,10 +32,6 @@ p{
 
 .hideScrollToTop{
     display: none;
-}
-
-.wikicontainer{
-    margin-bottom: 50px;
 }
 
 .horizontalrule{
@@ -42,7 +47,7 @@ p{
 }
 
 .wikiheading{
-    font-family: 'Unkempt', cursive;
+    font-family: MessengerTexture , sans-serif; 
     text-align: center;
     color:#C6AE34;
 }
@@ -52,69 +57,43 @@ p{
 }
 
 .paragarphheading{
-    font-family: 'Unkempt', cursive;
-    text-align: center;
+    font-family: MessengerTexture , sans-serif; 
     color:#C6AE34;
 }
 
 .paragarphsubheading{
-    font-family: 'Unkempt', cursive;
-    color: #F79767;
+   font-size: 1.2rem;
+   font-weight: bold;
 }
 
 .wikibox{
     color: #fff;
-    background-color: rgba(60,60,60,0.8);
-    width: 60%;
+    background-color: rgba(60,60,60,0.9);
+    width: 100%;
     height: auto; 
     padding: 30px; 
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 15px;
 }
 
-.background_image_wiki{
-    background-image: url('../media/hopsback.jpg');                      
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat:no-repeat;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    min-height: 100vh;
+.center{
+    text-align: center;
 }
 
 /* ----------------------- wiki videos ------------------------*/
-.showvidbutton{
-    text-align: center;
-    margin-top: 10px;
-}
-
-.vidbut{
-    margin-bottom: 20px;
-}
 
 .soilphvideo{
     text-align: center;
 }
 
 .soilphvideoplayer{
-    width:250px;
+    width:300px;
     height:215px;
 }
 
 .videoheading{
     font-size: 1.5rem;
-    font-family: 'Unkempt', cursive;
-    color: #F79767;
-}
-/* allows for the js slide up slide down transition */
-.videos{ 
-    transition:height 1s ease-out;
-    height:0;
-    overflow:hidden;
 }
 
 /* ----------------------- Pest Section -----------------------*/
@@ -124,7 +103,6 @@ p{
 }
 
 .pestheading{
-    font-family: 'Unkempt', cursive;
     font-size: 1.8rem;
     text-align: center;
     margin-top: 20px;
@@ -137,24 +115,15 @@ p{
     margin-bottom: 10px;
 }
 
-.pestimagediv{
-    text-align: center;
-}
-
-.pestclosebut{
-    text-align: center;
-}
-
-.pestclosebuttondiv{
+.pestimagediv,.pestclosebuttondiv,.pestclosebut{
     text-align: center;
 }
 
 /* ----------------------- wiki images ------------------------*/
 
 .rhzimage{
-    width: 60%;
+    width: 70%;
     height: auto;
-    border-radius: 50%;
     border-style: groove;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -162,9 +131,9 @@ p{
 .trellisimg{
     width: 50%;
     height: auto;
-    border-radius: 50%;
     border-style: groove;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .trenchimg{
@@ -175,11 +144,14 @@ p{
     margin: auto;
 }
 
+.underimage{
+    padding-top: 20px;
+}
 
 /* ----------------------- wiki Disclaimer ---------------------*/
 
 .disclaimer{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 /* ------------------- Media Queries base.html -----------------*/
@@ -210,15 +182,12 @@ p{
     .scrollToTop{
         right:20px;
     }
-    .trenchimg{
-        margin: auto;
-    }
 }
 
 
-@media only screen and (min-width: 981px){
-    .dropdown-menu{
-        width: 28vw;
+@media only screen and (max-width: 981px){
+    .rhzimage{
+        width: 100%;
     }
 }
 
@@ -230,7 +199,17 @@ p{
     }
     .pestimage{
         width: 80%;
-    }   
+    }  
+    .soilphvideoplayer{
+        width:230px;
+        height:215px;
+    } 
+    .rhzimage{
+        width: 80%;
+    }
+    .paragarphheading{
+        padding-top: 20px;
+    }
 }  
 
 @media only screen and (max-width: 425px){
@@ -247,15 +226,20 @@ p{
     }
     .paragarphheading{
         font-size: 2rem;
-    }
-    p{
-        text-align: center;
+        padding-top: 20px;
     }
     .paragarphsubheading{
         text-align: center;
     }
     .pestimage{
         width: 90%;
+    }
+    .rhzimage{
+        margin-top: 0px;
+    }
+    .trellisimg{
+        width: 100%;
+        margin-bottom: 5px;
     }
 }    
    
@@ -270,10 +254,16 @@ p{
     }
     .paragarphheading{
         font-size: 1.9rem;
+        text-align: center;
     }
     p{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        text-align: center;
     }
+    .rhzimage{
+        width: 80%;
+    }
+
 }    
 
 
@@ -304,12 +294,4 @@ p{
     .videoheading{
         font-size: 1.3rem;
     }
-    .trellisimg{
-        width: 60%;
-        margin-bottom: 5px;
-    }
-    .underimage{
-        padding-top: 0px;
-    }
-
 }

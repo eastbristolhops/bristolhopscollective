@@ -1,14 +1,12 @@
 "use strict";
 
-const pack_price = 22;
-const extra_hop = 13;
 let total_value = 0;
 let hop_type_array = ["Standard variety" , "Dwarf variety"];
 let order_total = document.getElementById("Order Total");
 
 window.addEventListener("load", function() {
-    autofilluuid();  
-    setOverlay("sold_out");                       // create the initial UUID for a new order
+    autofilluuid();  // create the initial UUID for a new order
+    setOverlay("sold_out")
     const form = document.getElementById('order-form');
     form.addEventListener("submit", function(e) {
       e.preventDefault();                   // dont allow page to refresh
@@ -33,43 +31,44 @@ window.addEventListener("load", function() {
     });
   });
 
+const send_overlay = `<span id="overlayBox"><span id="fill_info"></span></span>`;
 
 function setOverlay(action){
   // the over lay lets the user have some interation with what is happening at any given time.
   const overlay = document.getElementById("form_overlay");
   overlay.innerHTML = send_overlay;
   const fill_info = document.getElementById("fill_info");
-
+ 
 
   switch(action){
     case "wait":
       // displays the spinner and please wait
       fill_info.innerHTML = `<span id="overlayBox"><div class="spinner" id="spinner">
-      <iframe onclick="none" src="https://giphy.com/embed/xT0xepcw2ZHNftb7aw" frameBorder="0" class="hopsSpinner"></iframe></div><span class="loadingText">PLEASE WAIT!</span>`;
+      <iframe onclick="none" src="https://giphy.com/embed/xT0xepcw2ZHNftb7aw" frameBorder="0" class="hopsSpinner"></iframe></div><span class="loadingText fade">PLEASE WAIT!</span>`;
       break;
     case "success":
       // notifys the user that the order has been placed successfully
       fill_info.innerHTML = `<span class="reply_text">Welcome on board! <br> Your order has been submitted and <span style='color: red'>a member of 
       our team will be in touch with payment details in due course.</span> <br>
       <strong><i>Please keep an eye on your spam folder!</i></strong>
-      <br><br> If you would like to place another order <a class="signupbutton" onclick="reset_form()">click Here</a></span>`;
+      <br><br> If you would like to place another order <a class="" onclick="reset_form()">click Here</a></span>`;
       break;
     case "error":
       // notifys the user something has gone wrong and allows the page to be refreshed
-      fill_info.innerHTML = `<span class="reply_text">Oops something went wrong! <br> Click here to <a class="signupbutton" onclick="refresh()">Try Again</a> <br> If this keeps happening click
+      fill_info.innerHTML = `<span class="reply_text">Oops something went wrong! <br> Click here to <a class="" onclick="refresh()">Try Again</a> <br> If this keeps happening click
       <a class="nav-link" href="../pages/contact.html">Contact Us</a></span>`;
       break;
     case "sold_out":
         // notifys the user drive has now stopped
-        fill_info.innerHTML = `<span class="reply_text">We are SOLD OUT <br> For more info on when pre orders for ${date +1} will go on sale please sign up to the mailing list, but if you would like to get involved 
+      fill_info.innerHTML = `<span class="reply_text">We are SOLD OUT <br> For more info on when pre orders for ${date +1} will go 
+        on live please <a class="" href="../pages/subscribe.html">subscribe</a> to the mailing list, but if you would like to get involved 
         checkout out our socials 
         <a href="https://www.facebook.com/groups/eastbristolhops" target="_blank"><i
-                  class="fab fa-facebook-square footer-icon" aria-hidden="true"></i></a>
+                  class="fab fa-facebook-square link" aria-hidden="true"></i></a>
               <a href="https://twitter.com/eastbristolhops?lang=en" target="_blank"><i
-                  class="fab fa-twitter-square footer-icon" aria-hidden="true"></i></a>
+                  class="fab fa-twitter-square link" aria-hidden="true"></i></a>
               <a href="https://instagram.com/bristolhopscollective?igshid=MzRlODBiNWFlZA=="
-               target="_blank"><i class="fab fa-instagram-square footer-icon" aria-hidden="true"></i></a> for events and updates!
-        <a class="nav-link" href="../pages/subscribe.html">Subscribe</a></span>`;
+               target="_blank"><i class="fab fa-instagram-square link" aria-hidden="true"></i></a> for events and updates!</span>`;
         break;
     default:
       // clears any overlay from the from alloqing the user to make another order
@@ -136,5 +135,3 @@ function update_values(){
   total_value = pack_sub_total + additional_sub_total;
   order_total.innerHTML = parseFloat(total_value).toFixed(2);
 }
-
-const send_overlay = `<span id="overlayBox"><span id="fill_info"></span></span>`;

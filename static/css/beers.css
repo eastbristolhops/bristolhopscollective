@@ -1,0 +1,162 @@
+.navbar{
+    background-color: rgba(60,60,60,1);
+}
+
+.background_image{
+    background-image: url('../media/beers/elevate-5sAzXev5-jA-unsplash.jpg');                      
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: MessengerTexture , sans-serif; 
+    color: rgb(81 95 42);
+}
+
+.beer-cellar-heading{
+    width: 100%!important;
+    background-color: rgba(255,207,1,0.7);
+    padding-bottom: 20px;
+}
+
+.conatiner_background{
+    padding-top: 20px;
+}
+
+.subheading{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.beerinfo{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.beerinfodiv{
+    padding-bottom: 30px;
+}
+
+.icon{
+    color: rgb(153 153 54 );
+}
+
+.stat{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.pumpimage{
+    width: 50%;
+}
+
+.pump_clip{
+    padding-bottom: 10px;
+    width: 30%;
+    height: auto;
+}
+
+.pump_clip_image_div{
+    text-align: center;
+}
+
+.chartdiv {
+    width: 80%;
+    height: 500px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.chart-div-center{
+    text-align: -webkit-center;
+}
+
+.hops_breakdown{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: rgba(60,60,60,0.8);
+    /* box-shadow: 5px 5px 10px 0px white; */
+}
+
+.stat_image{
+    width: 80%;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 950px){
+   .beerinfo{
+     font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 765px){
+
+    .subheading{
+        font-size: 1.3rem;
+    }
+    .beerinfo{
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .pump_clip{
+        padding-bottom: 10px;
+        width: 60%;
+        height: auto;
+    }
+    .chartdiv{
+        padding-top: 20px;
+        width: 90%;
+    }
+    #hops_makeup_charts{
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 448px){
+    .heading{
+        font-size: 1.8rem;
+    }
+    .subheading{
+        font-size: 1rem;
+    }
+    #hops_makeup_charts{
+        width: 95%;
+        margin-left: 10px;
+    }
+    .chartdiv {
+       font-size: 1rem;
+       height: 400px;
+       width: 100%;
+    } 
+}
+
+@media only screen and (max-width: 375px){
+    .pump_clip{
+        padding-bottom: 10px;
+        width: 60%;
+    }
+    .chartdiv {
+        font-size: 0.8rem;
+     } 
+    .hops_makeup_charts{
+        padding-left: 0px;
+    }
+ }
+   
+
+@media only screen and (max-width: 320px){
+
+    
+}  

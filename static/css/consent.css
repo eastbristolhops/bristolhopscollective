@@ -1,0 +1,32 @@
+/* -------------- Consent Cookie --------------*/
+
+#consent-popup{
+    visibility: visible;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 1rem;
+    color: white;
+    background-color: #000;
+    transition: opacity 1s ease;
+}
+
+#consent-text{
+    font-size: 1.0rem!important;
+}
+
+#accept{
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+    height: 0px;
+    width: 0px;
+}
