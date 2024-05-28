@@ -99,7 +99,6 @@ const fill = document.getElementById("orderNum");
 function autofilluuid(){
   // On the window load, This funtion will generate a uniqe UUID number that is unsed as an order number for the form 
     fill.value = generateUUID().toUpperCase();
-    console.log( fill.value);
 };
 
 
