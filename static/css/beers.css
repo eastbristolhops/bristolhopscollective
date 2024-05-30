@@ -74,6 +74,13 @@
     background-color: rgba(255,255,255,0.6);
 }
 
+.loader{
+    z-index: 1500;
+    background-image: url('../media/gif/Growingflower.gif');
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
 .chart-div-center{
     text-align: -webkit-center;
 }
@@ -91,7 +98,6 @@
     width: 80%;
     text-align: center;
 }
-
 
 @media only screen and (max-width: 950px){
    .beerinfo{
@@ -160,3 +166,29 @@
 
     
 }  
+
+/* .loader {
+    width: 105px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-right-color:rgba(255,207,1,0.7);
+    animation: l15 1s infinite linear;
+  }
+  .loader::before,
+  .loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: l15 2s infinite;
+  }
+  .loader::after {
+    margin: 8px;
+    animation-duration: 3s;
+  }
+  @keyframes l15{ 
+    100%{transform: rotate(1turn)}
+  } */

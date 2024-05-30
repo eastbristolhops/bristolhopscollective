@@ -16,30 +16,30 @@ class SpecialHeader extends HTMLElement {
               <li class="nav-item nav-item-padding">
                 <a class="nav-link active" aria-current="page" href="../">Home</a>
               </li>
-              <li class="nav-item nav-item-padding">
-                <a class="nav-link" href="${pagelocation()}wiki.html">HopsWiki</a>
+              <li class="nav-item dropdown nav-item-padding">
+              <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="nav-link dd-link" href="${pagelocation()}history.html">History</a></li>
+                  <li><a class="nav-link dd-link" href="${pagelocation()}team.html">The Team</a></li>
+                  <li><a class="nav-link dd-link" href="${pagelocation()}subscribe.html">Subscribe</a></li>
+                </ul>
               </li>
               <li class="nav-item nav-item-padding">
-                <a class="nav-link dd-link" href="${pagelocation()}beers.html">Beers</a>
+                <a class="nav-link dd-link" href="${pagelocation()}beers.html">Beer</a>
               </li>
               <li class="nav-item">
                 <a class="navbar-brand" href="../"><img class="navbar-logo" src="../static/media/logo/logoedit.png" alt="logo"></a>
               </li>
               <li class="nav-item nav-item-padding">
+              <a class="nav-link" href="${pagelocation()}wiki.html">Wiki</a>
+             </li>
+              <li class="nav-item nav-item-padding">
                 <a class="nav-link" href="../join.html">Join Us</a>
               </li>
               <li class="nav-item nav-item-padding">
                 <a class="nav-link dd-link" href="${pagelocation()}contact.html">Contact</a>
-              </li>
-              <li class="nav-item dropdown nav-item-padding">
-                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  More
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="nav-link dd-link" href="${pagelocation()}history.html">History</a></li>
-                    <li><a class="nav-link dd-link" href="${pagelocation()}team.html">The Team</a></li>
-                    <li><a class="nav-link dd-link" href="${pagelocation()}subscribe.html">Subscribe</a></li>
-                  </ul>
               </li>
             </ul>
           </div>
