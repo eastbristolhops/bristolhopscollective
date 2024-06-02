@@ -21,6 +21,7 @@ class SpecialHeader extends HTMLElement {
                 About Us
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="nav-link dd-link" href="${pagelocation()}news.html">News</a></li>
                   <li><a class="nav-link dd-link" href="${pagelocation()}history.html">History</a></li>
                   <li><a class="nav-link dd-link" href="${pagelocation()}team.html">The Team</a></li>
                   <li><a class="nav-link dd-link" href="${pagelocation()}subscribe.html">Subscribe</a></li>
