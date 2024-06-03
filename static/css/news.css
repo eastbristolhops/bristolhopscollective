@@ -1,6 +1,6 @@
 .newsheading{
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .landingsubparagraph{
@@ -10,10 +10,9 @@
     padding-top: 20px;
 }
 
-
 .videoplayer{
-    /* width:400px;
-    height:315px; */
+    width:400px;
+    height:315px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +23,7 @@
     text-align: center;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 500px;
+    min-height: 500px;
 }
 
 .card:hover{
@@ -41,18 +40,58 @@
 .special-image{
     border-radius: 50%;
     width: 85%;
-    padding-top: 10px;
+    padding-top: 11px;
+}
+
+#image{
+    text-align: center;
+}
+
+.modal-dialog{
+    text-align: -webkit-center;
+}
+
+.modal-image{
+    border-radius: 50%;
+    width: 85%;
 }
 
 @media only screen and (max-width: 990px){
-   
+  #image{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 765px){
-   
-   
+ 
 }
 
 @media only screen and (max-width: 575px){
-  
+    .card{
+        width: 80%;
+        margin-left: 50px;
+    }
+    .landingsubparagraph{
+        font-size: 1.7rem;
+    }  
+    .modal-content{
+        width: 90%;
+    }
 } 
+
+@media only screen and (max-width: 425px){
+    .landingsubparagraph{
+        font-size: 1.5rem;
+    }  
+    .card{
+        width: 90%;
+        margin-left: 15px;
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .landingsubparagraph{
+        font-size: 1.3rem;
+    }  
+}
