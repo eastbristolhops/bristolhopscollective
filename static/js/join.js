@@ -66,7 +66,7 @@ function setOverlay(action){
         <a href="https://www.facebook.com/groups/eastbristolhops" target="_blank"><i
                   class="fab fa-facebook-square link" aria-hidden="true"></i></a>
               <a href="https://twitter.com/eastbristolhops?lang=en" target="_blank"><i
-                  class="fa-brands fa-square-x-twitter link" aria-hidden="true"></i></a>
+                  class="fab fa-twitter-square link" aria-hidden="true"></i></a>
               <a href="https://instagram.com/bristolhopscollective?igshid=MzRlODBiNWFlZA=="
                target="_blank"><i class="fab fa-instagram-square link" aria-hidden="true"></i></a> for events and updates!</span>`;
         break;
