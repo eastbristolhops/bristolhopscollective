@@ -88,12 +88,11 @@ for(let i = 0; i < year.length; i ++){
         </div>
         <div class="col-md-12 chart-div-center">
           <p class="beerinfo" >Hops used by type and quantity</p>
-              <div class="chartdiv loader" id="${[i]}">
-            </div>
-           
+          <div class="chartdiv" id="${[i]}"></div>
         </div>
   `;
 }
+
 
 function load_chart(){
   setTimeout(build_chart, 1000);
@@ -102,13 +101,7 @@ function load_chart(){
 let build_chart = () => {
   for(let i = 0; i < year.length; i ++){
     build(String([i]), dataPointsHops[i], "beer");
-    remove_spinner([i]);
   }
-}
-
-let remove_spinner = (id) =>{
-   let remove_spinner = document.getElementById(id);
-    remove_spinner.classList.remove("loader");
 }
 
 let totalweightinfo = document.getElementById("totalweightinfo").innerHTML = `${get_totals(dataPointsHops)}`;
