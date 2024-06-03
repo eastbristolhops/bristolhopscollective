@@ -11,7 +11,6 @@ $(document).ready(function(){
     /*---------------------- signup banner ------------------------*/ 
     const newsAcceptBtn1 = document.getElementById('newsAcpt1');
     const newsAcceptBtn2 = document.getElementById('newsAcpt2');
-    const newsAcceptBtn3 = document.getElementById('newsAcpt3');
    
     const acceptNews = event => {
         saveToStorage(newsPropertyName);
@@ -22,7 +21,6 @@ $(document).ready(function(){
     if (!checkNewsCookie){ 
         newsAcceptBtn1.addEventListener('click', acceptNews);
         newsAcceptBtn2.addEventListener('click', acceptNews);
-        newsAcceptBtn3.addEventListener('click', acceptNews);
     }
 });
 
@@ -52,10 +50,6 @@ class SpecialSignupBanner extends HTMLElement {
                             Sign up to the Mailing List to receive updates about hop
                             collection dates, growers parties and year-round socials, as well as tips and tricks to
                             maximise your harvest!
-                            <br>
-                            <br>
-                            <a class="modal-button" id="newsAcpt3"
-                            href="join.html">Join Us!</a>
                         </h5>
                     </div>
                     <hr>
