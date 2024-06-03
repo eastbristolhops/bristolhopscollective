@@ -2,4 +2,5 @@
 
 https://bristolhopscollective.co.uk/
 
-Test
+
+created the news page
