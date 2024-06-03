@@ -1,78 +1,97 @@
 .newsheading{
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
-.videostory{
-    font-size: 1.3rem;
-    padding-top: 40px;
-    padding-left: 20px;
+.landingsubparagraph{
+    font-family: MessengerTexture , sans-serif; 
+    color: rgb(81 95 42);
+    font-size: 2.2rem; 
+    padding-top: 20px;
 }
 
 .videoplayer{
     width:400px;
     height:315px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-.videodiv{
+.card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 500px;
+}
+
+.card:hover{
+    border-color: gray;
+}
+
+.card-img-top{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.special-image{
+    border-radius: 50%;
+    width: 85%;
+    padding-top: 11px;
+}
+
+#image{
     text-align: center;
 }
 
-.pumpimage{
-    width: 50%;
+.modal-dialog{
+    text-align: -webkit-center;
 }
 
-.newsimage{
-    text-align: center;
+.modal-image{
+    border-radius: 50%;
+    width: 85%;
 }
-
-.news-row{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-shadow: 5px 5px 10px 0px gray;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 
 @media only screen and (max-width: 990px){
-    .videostory{
-        padding-top: 0px;
-    }
-    .videoplayer{
-        margin-top: 10px;
-        width:300px;
-        height:215px;
-    }
+  #image{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 765px){
-    .videoplayer{
-        width:300px;
-        height:215px;
-    }
-    .videostory{
-        font-size: 1.2rem;
-        padding-top: 20px;
-        padding-left: 0px;
-    }
-    .pumpimage{
-        margin-top: 50px;
-        width: 80%;
-    }
-   
+ 
 }
 
 @media only screen and (max-width: 575px){
-    .videostory{
-        text-align: center;
-        padding-top: 00px;
+    .card{
+        width: 80%;
+        margin-left: 50px;
     }
-    .pumpimage{
-        margin-top: 40px;
-        width: 50%;
-    } 
-    .news-row{
-    padding-bottom: 30px;
+    .landingsubparagraph{
+        font-size: 1.7rem;
+    }  
+    .modal-content{
+        width: 90%;
     }
 } 
+
+@media only screen and (max-width: 425px){
+    .landingsubparagraph{
+        font-size: 1.5rem;
+    }  
+    .card{
+        width: 90%;
+        margin-left: 15px;
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .landingsubparagraph{
+        font-size: 1.3rem;
+    }  
+}

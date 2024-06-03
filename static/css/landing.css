@@ -116,6 +116,9 @@ p{
         text-align: center;
         font-size: 1.2rem;
     }
+    .logo_overlay{
+        width: 40%;
+    }
 } 
 
 @media only screen and (max-width: 576px){
@@ -141,6 +144,9 @@ p{
     .carousel-item{
         height: 50vw;
     }
+    .logo_overlay{
+        width: 50%;
+    }
 }    
     
 @media only screen and (max-width: 375px){
@@ -150,6 +156,9 @@ p{
     }
     p{
         font-size: 1.2rem;
+    }
+    .logo_overlay{
+        width: 60%;
     }
 }    
     
